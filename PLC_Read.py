@@ -71,7 +71,7 @@ class PLC_Read:
         Data = D_POINT(POINT)
         if(Data is True):
             Data_hex = DEC_TO_HEC(POINT)
-            Data = "01FF000A44200000{0}4000".format(Data_hex)
+            Data = "01FF000A44200000{0}0100".format(Data_hex)
             return self.DATA.SEND_RECIVE(Data)
         else:
             return Data
