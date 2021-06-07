@@ -18,7 +18,7 @@ class PLC_CONNECTED():
         PLC_IP_Fix = "192.168.1.250"
         PLC_PORT_Fix = 10000
         FX3G = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        FX3G.settimeout(2)
+        FX3G.settimeout(1)
         try:
             FX3G.connect((PLC_IP_Fix, PLC_PORT_Fix))
         except socket.timeout:
